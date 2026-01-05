@@ -201,13 +201,15 @@ jobs:
             DESCRIPTION="${DESCRIPTION}- 这是一个无图形界面的服务器版本\n"
             DESCRIPTION="${DESCRIPTION}- 包含基础网络管理工具\n"
             DESCRIPTION="${DESCRIPTION}- 已安装 SSH 服务器\n"
+            DESCRIPTION="${DESCRIPTION}- 已安装中文语言支持\n"
             DESCRIPTION="${DESCRIPTION}- 包含必要的设备驱动和固件\n"
           else
             DESCRIPTION="${DESCRIPTION}说明：\n"
             DESCRIPTION="${DESCRIPTION}- 这是一个带有图形界面的桌面版本\n"
             DESCRIPTION="${DESCRIPTION}- 包含 ${{ env.DESKTOP_ENV }} 桌面环境\n"
+            DESCRIPTION="${DESCRIPTION}- 已安装 SSH 服务器\n"
             DESCRIPTION="${DESCRIPTION}- 已安装中文语言支持\n"
-            DESCRIPTION="${DESCRIPTION}- 包含音频驱动和多媒体支持\n"
+            DESCRIPTION="${DESCRIPTION}- 包含必要的设备驱动和固件\n"
           fi
           
           echo "description<<EOF" >> $GITHUB_OUTPUT
